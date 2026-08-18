@@ -26,6 +26,7 @@ body {
 
 nav {
     display: flex;
+    justify-content: space-between;
     width: 100%;
     gap: 5rem;
     padding: 2rem;
@@ -36,7 +37,7 @@ nav h1 {
 }
 
 nav h1:hover {
-    animation: jitter 0.5s ease-in-out;
+    animation: jitter 0.75s ease-out;
 
 }
 
@@ -53,8 +54,7 @@ nav h1:hover {
 
 nav ul {
     display: flex;
-    width: 100%;
-    justify-content: space-between;
+    gap: clamp(2rem, (1.5rem + 3vw), 5rem);
     list-style: none;
     align-items: center;
 }
