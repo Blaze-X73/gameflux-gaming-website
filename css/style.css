@@ -1,0 +1,79 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --text: #e7e7e7;
+    --subtext: #bcbcbc;
+    --background: #04000f;
+    --primary: #ff4d4d;
+    --secondary: #5f3f52;
+    --accent: #ac2a2a;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: var(--background);
+    font-family: Inter, sans-serif;
+    color: var(--text);
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    gap: 5rem;
+    padding: 2rem;
+}
+
+nav h1 {
+    cursor: pointer;
+}
+
+nav h1:hover {
+    animation: jitter 0.5s ease-in-out;
+
+}
+
+@keyframes jitter {
+    0% {}
+
+    50% {
+        color: var(--primary);
+        text-shadow: 0 0 1rem var(--primary);
+    }
+
+    100% {}
+}
+
+nav ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+}
+
+nav ul li {}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--subtext);
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--primary);
+    text-shadow: 0 0 2rem var(--primary);
+}
+
+h1,
+h2,
+h3 {
+    font-family: Audiowide, sans-serif;
+}
